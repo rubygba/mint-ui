@@ -1,0 +1,284 @@
+/* My css strap */
+
+/* 组件components */
+
+/* 统一盒模型 */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 2;
+}
+
+/* common layout */
+/*.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}*/
+
+.width-1 {
+  width: 8.33%;
+}
+.width15 {
+  width: 12.5%;
+}
+.width-2 {
+  width: 16.66%;
+}
+.width-3 {
+  width: 24.99%;
+}
+.width-4 {
+  width: 33.33%;
+}
+.width-5 {
+  width: 41.66%;
+}
+.width-6 {
+  width: 50%;
+}
+.width-7 {
+  width: 58.33%;
+}
+.width-8 {
+  width: 66.66%;
+}
+.width-9 {
+  width: 75%;
+}
+.width-10 {
+  width: 83.33%;
+}
+.width-11 {
+  width: 91.66%;
+}
+.width-12 {
+  width: 100%;
+}
+
+.float-left {
+  float: left!important;
+}
+.float-right {
+  float: right!important;
+}
+
+ul.float-row>li {
+  float: left;
+}
+
+.offset-1 {
+  padding-left: 10px;
+}
+.offset15 {
+  padding-left: 15px;
+}
+.offset-2 {
+  padding-left: 20px;
+}
+/* end common layout */
+
+
+.bg-cross {
+  position: absolute;
+  z-index: -2;
+  height: 200px;
+  /*background: url("bg.jpg") no-repeat scroll center top;*/
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+
+.txt-black {
+  color: #000;
+}
+.txt-gray {
+  color: $txtGray;
+}
+.txt-red {
+  color: $txtRed;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.hr-dashed {
+  margin: 0;
+  border: 0; /* reset */
+  border-top: 1px dashed $borderGray;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block
+}
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+progress {
+    vertical-align: baseline
+}
+[hidden], template {
+    display: none
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none
+}
+a:active, a:hover {
+    outline-width: 0
+}
+abbr[title] {
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+b, strong {
+    font-weight: bolder
+}
+dfn {
+    font-style: italic
+}
+small {
+    font-size: 80%
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+sup {
+    top: -.5em
+}
+sub {
+    bottom: -.25em
+}
+img {
+    border-style: none
+}
+svg:not(:root) {
+    overflow: hidden
+}
+code, kbd, pre, samp {
+    font-family: monospace;
+    font-size: 1em
+}
+pre {
+    overflow: auto;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    vertical-align: middle
+}
+button, input {
+    overflow: visible
+}
+button, select {
+    text-transform: none
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button
+}
+[disabled] {
+    cursor: default
+}
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+textarea {
+    overflow: auto;
+    resize: none;
+    vertical-align: top
+}
+optgroup {
+    font-weight: 700
+}
+input, select, textarea {
+    outline: 0
+}
+input, textarea {
+    -webkit-user-modify: read-write-plaintext-only
+}
+input::-ms-clear, input::-ms-reveal {
+    display: none
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: inherit;
+    opacity: .54
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+td, th {
+    padding: 0
+}
+blockquote, figure, form, h1, h2, h3, h4, h5, h6, p {
+    margin: 0
+}
+dd, dl, li, ol, ul {
+    margin: 0;
+    padding: 0
+}
+ol, ul {
+    list-style: none outside none
+}
