@@ -1,10 +1,11 @@
 # mint-ui
 
 > Vue.js workflow with jade/sass/stylus, without unit tests.<br>
-> Debug with eslint.
+> Debug with eslint.<br>
 > 使用vue-workflow构建mint-ui
 
 ## Demo
+
 [在线演示](http://gameboy.online/test/mint-ui/)
 
 ## Build Setup
@@ -18,10 +19,13 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
+# 打包发布
 # build for production with minification
 npm run build
 ```
 
-config.js配置监听端口、远程服务器api转发规则
+`config.js` 配置监听端口、远程服务器api转发规则
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+###Bug
+
+Windows下64位node安装 `node-sass` 无法生成正确的二进制文件， `npm install` 后需要 `npm rebuild node-sass`
