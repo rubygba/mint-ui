@@ -37,33 +37,34 @@ export default {
 };
 </script>
 
-<style lang="css">
-  @import "../../../style/var.css";
+<style lang="scss">
+  @import "../../../style/var.scss";
 
-  @component-namespace mint {
-    @component navbar {
-      background-color: $color-white;
-      display: flex;
-      text-align: center;
+  mint-navbar {
+    background-color: $color-white;
+    display: flex;
+    text-align: center;
 
-      @when fixed {
-        position: fixed 0 0 * 0;
-        z-index: $z-index-normal;
+    .is-fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: $z-index-normal;
+    }
+
+    .mint-tab-item {
+      padding: 17px 0;
+      font-size: 15px;
+
+      &:last-child {
+        border-right: 0;
       }
 
-      .mint-tab-item {
-        padding: 17px 0;
-        font-size: 15px;
-
-        &:last-child {
-          border-right: 0;
-        }
-
-        &.is-selected {
-          border-bottom: 3px solid $color-blue;
-          color: $color-blue;
-          margin-bottom: -3px;
-        }
+      &.is-selected {
+        border-bottom: 3px solid $color-blue;
+        color: $color-blue;
+        margin-bottom: -3px;
       }
     }
   }

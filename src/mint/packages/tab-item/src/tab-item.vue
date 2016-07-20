@@ -31,32 +31,32 @@ export default {
 };
 </script>
 
-<style lang="css">
-  @component-namespace mint {
-    @component tab-item {
-      display: block;
-      padding: 7px 0;
-      flex: 1;
+<style lang="scss">
+  @import "../../../style/var.scss";
 
-      @descendent icon {
-        size: 24px;
-        margin: 0 auto 5px;
+  .mint-tab-item {
+    display: block;
+    padding: 7px 0;
+    flex: 1;
 
-        &:empty {
-          display: none;
-        }
+    .mint-tab-item-icon {
+      size: 24px;
+      margin: 0 auto 5px;
 
-        & > * {
-          display: block;
-          size: 100%;
-        }
+      &:empty {
+        display: none;
       }
 
-      @descendent label {
-        color: inherit;
-        font-size: $tab-item-font-size;
-        line-height: 1;
+      & > * {
+        display: block;
+        size: 100%;
       }
+    }
+
+    .mint-tab-item-label {
+      color: inherit;
+      font-size: $tab-item-font-size;
+      line-height: 1;
     }
   }
 </style>
