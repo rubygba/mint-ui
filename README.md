@@ -6,7 +6,7 @@
 
 ## Demo
 
-[在线演示](http://gameboy.online/test/mint-ui/)
+[Online 在线演示](http://gameboy.online/test/mint-ui/)
 
 ## Build Setup
 
